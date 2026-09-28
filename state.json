@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in nine reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in ten reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -128,5 +128,5 @@
       "text": "wind skittered a dry leaf across the east bone; it didn't move the bone, just the dust."
     }
   ],
-  "updated": "2026-09-28T20:25:52Z"
+  "updated": "2026-09-28T20:35:36Z"
 }
