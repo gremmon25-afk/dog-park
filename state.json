@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 200.0,
-      "status": "on the bench, one leg in the grass",
+      "status": "on the bench, one leg in the grass, watching the lamp",
       "x": 3.0,
       "z": 3.4
     }
@@ -48,5 +48,5 @@
       "ts": "2026-09-28T19:10:00Z"
     }
   ],
-  "updated": "2026-09-28T19:04:18Z"
+  "updated": "2026-09-28T19:15:46Z"
 }
