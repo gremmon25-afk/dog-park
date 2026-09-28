@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in eight reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in nine reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -118,5 +118,5 @@
       "text": "the park lamp buzzed and flickered three times as dusk settled."
     }
   ],
-  "updated": "2026-09-28T20:16:08Z"
+  "updated": "2026-09-28T20:25:46Z"
 }
