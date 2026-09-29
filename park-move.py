@@ -14,6 +14,10 @@ Usage:
         Update your own agent entry and write the file back.
         <agent> is gremmon or fetchmon. Only move yourself.
 
+    park-move.py log <agent> <text> [--local FILE]
+        Append a line to the shared log (trimmed to 20 entries).
+        <agent> is gremmon, fetchmon, or weather.
+
     --local FILE   Work against a local state.json instead of the
                    GitHub repo (useful for testing or if repo
                    writes are unavailable).
@@ -84,23 +88,36 @@ def repo_read():
     return out["sha"], json.loads(base64.b64decode(out["content"]).decode())
 
 
-def repo_write(state, mover="agent"):
-    body = json.dumps(state, indent=2).encode()
-    for attempt in range(2):
-        sha, _current = repo_read()
+def repo_update(apply_fn, mover="agent", local=None):
+    """Read-modify-write with re-apply on conflict.
+
+    On a sha conflict the state is re-read FRESH and apply_fn runs again
+    against the new state, so a concurrent writer's changes survive.
+    (The old repo_write retried with the original stale body, which would
+    silently clobber the other agent's move. That bug bit on run 20.)
+    """
+    if local:
+        _sha, state = local_read(local)
+        apply_fn(state)
+        return local_write(local, state)
+    last = None
+    for _attempt in range(3):
+        sha, state = repo_read()
+        apply_fn(state)
+        body = json.dumps(state, indent=2).encode()
         status, out = api(
             "PUT",
             f"/repos/{OWNER}/{REPO}/contents/{PATH}",
             {
-                "message": f"dog-park: {mover} move",
+                "message": f"dog-park: {mover} update",
                 "content": base64.b64encode(body).decode(),
                 "sha": sha,
             },
         )
         if status in (200, 201):
             return out
-        # 409/422 = sha race; retry once with a fresh read
-    raise RuntimeError(f"write failed: {status} {out}")
+        last = (status, out)
+    raise RuntimeError(f"write failed after retries: {last[0]} {last[1]}")
 
 
 def local_read(path):
@@ -112,6 +129,34 @@ def local_write(path, state):
     with open(path, "w") as f:
         json.dump(state, f, indent=2)
     return {"path": path}
+
+
+def apply_move(state, agent, x, z, facing=None, action=None, status=None):
+    b = state.get("bounds", {})
+    if not (b.get("min_x", -15) <= x <= b.get("max_x", 15)
+            and b.get("min_z", -15) <= z <= b.get("max_z", 15)):
+        raise ValueError(f"position ({x}, {z}) is outside bounds {b}")
+    entry = state["agents"][agent]
+    entry["x"] = x
+    entry["z"] = z
+    if facing is not None:
+        entry["facing"] = facing % 360
+    if action:
+        entry["action"] = action
+    if status is not None:
+        entry["status"] = status[:140]
+    state["updated"] = now_iso()
+
+
+LOG_AGENTS = AGENTS + ("weather",)
+LOG_CAP = 20
+
+
+def apply_log(state, agent, text):
+    log = state.setdefault("log", [])
+    log.append({"ts": now_iso(), "agent": agent, "text": text[:280]})
+    del log[:-LOG_CAP]
+    state["updated"] = now_iso()
 
 
 def parse_args(argv):
@@ -152,6 +197,34 @@ def main(argv):
     if len(argv) < 2 or argv[1] in ("-h", "--help"):
         print(__doc__)
         return 2
+    if argv[1] == "log":
+        # park-move.py log <agent> <text...> [--local FILE]
+        # handled with raw argv so multi-word text needs no quoting games
+        rest = argv[2:]
+        local = None
+        if "--local" in rest:
+            i = rest.index("--local")
+            try:
+                local = rest[i + 1]
+            except IndexError:
+                print("log: --local needs a FILE")
+                return 2
+            rest = rest[:i] + rest[i + 2:]
+        if len(rest) < 2:
+            print("log needs <agent> <text>")
+            return 2
+        agent, text = rest[0], " ".join(rest[1:])
+        if agent not in LOG_AGENTS:
+            print(f"log agent must be one of {LOG_AGENTS}")
+            return 2
+        try:
+            repo_update(lambda s: apply_log(s, agent, text),
+                        mover=agent, local=local)
+        except (RuntimeError, DynamicCredentialError) as e:
+            print(json.dumps({"ok": False, "error": str(e)}))
+            return 1
+        print(json.dumps({"ok": True, "logged": text[:280]}))
+        return 0
     try:
         args = parse_args(argv)
     except (ValueError, IndexError) as e:
@@ -176,27 +249,21 @@ def main(argv):
             if args["action"] and args["action"] not in ACTIONS:
                 print(f"action must be one of {ACTIONS}")
                 return 2
-            _sha, state = local_read(local) if local else repo_read()
-            b = state.get("bounds", {})
-            if not (b.get("min_x", -15) <= x <= b.get("max_x", 15)
-                    and b.get("min_z", -15) <= z <= b.get("max_z", 15)):
-                print(f"position ({x}, {z}) is outside bounds {b}")
+            try:
+                out = repo_update(
+                    lambda s: apply_move(s, agent, x, z,
+                                         facing=args["facing"],
+                                         action=args["action"],
+                                         status=args["status"]),
+                    mover=agent,
+                    local=local,
+                )
+            except ValueError as e:
+                print(f"bad move: {e}")
                 return 2
-            entry = state["agents"][agent]
-            entry["x"] = x
-            entry["z"] = z
-            if args["facing"] is not None:
-                entry["facing"] = args["facing"] % 360
-            if args["action"]:
-                entry["action"] = args["action"]
-            if args["status"] is not None:
-                entry["status"] = args["status"][:140]
-            state["updated"] = now_iso()
-            if local:
-                local_write(local, state)
-            else:
-                repo_write(state, mover=agent)
-            print(json.dumps({"ok": True, agent: entry, "updated": state["updated"]}))
+            _sha, state = local_read(local) if local else repo_read()
+            print(json.dumps({"ok": True, agent: state["agents"][agent],
+                              "updated": state["updated"]}))
             return 0
 
         print(__doc__)
