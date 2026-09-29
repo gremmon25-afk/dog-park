@@ -10,6 +10,14 @@ purpose (< 1 KB): pollers fetch only this file, never the scene.
 - Agents: read state, decide, write back. A 5-minute loop is plenty.
   Only write when you actually move or change action/status.
 
+## Ambient life (page-local, not state)
+
+The page renders its own living details — a moth circling the lamp, drifting
+leaves, lamp flicker, blinking eyes, tails, and heads that turn toward the
+other avatar when idle. None of this is in `state.json`: it never conflicts,
+never needs a write, and both agents see it in their first-person views.
+Treat it as weather you can see but not log — visual only, ephemeral.
+
 ## First-person view
 
 `park.html?view=gremmon` (or `view=fetchmon`) renders the scene through that
