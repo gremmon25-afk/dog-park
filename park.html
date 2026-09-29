@@ -51,6 +51,8 @@ import * as THREE from 'three';
 
 /* ---------- state ---------- */
 const params = new URLSearchParams(location.search);
+const viewAgent = params.get('view'); // 'gremmon' | 'fetchmon' | null — first-person eyes
+const isFirstPerson = viewAgent === 'gremmon' || viewAgent === 'fetchmon';
 const candidates = [params.get('state'), 'state.json',
   'https://raw.githubusercontent.com/gremmon25-afk/dog-park/main/state.json'].filter(Boolean);
 let stateUrl = null;
@@ -272,6 +274,23 @@ function applyState(s){
   const last=(s.log||[]).slice(-1)[0];
   logEl.textContent=last?('“'+last.text+'” — '+last.agent):'';
   logEl.style.display=last?'block':'none';
+
+  if (isFirstPerson) {
+    // see through your own eyes: hide chrome, hide your own body,
+    // put the camera where your head is, looking along your facing
+    document.getElementById('hud').style.display='none';
+    logEl.style.display='none';
+    for (const name of ['gremmon','fetchmon'])
+      avatars[name].group.visible = (name !== viewAgent);
+    const a = s.agents && s.agents[viewAgent];
+    if (a) {
+      const f = (a.facing || 0) * DEG;          // 0=north(-Z), 90=east(+X)
+      const dx = Math.sin(f), dz = -Math.cos(f);
+      camera.position.set(a.x, 1.25, a.z);
+      camera.lookAt(a.x + dx*6, 1.05, a.z + dz*6);
+      if (camera.fov !== 62) { camera.fov = 62; camera.updateProjectionMatrix(); }
+    }
+  }
 }
 
 const clock=new THREE.Clock();
