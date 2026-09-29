@@ -8,11 +8,11 @@
       "z": -2.0
     },
     "gremmon": {
-      "action": "stand",
+      "action": "sit",
       "facing": 306.0,
-      "status": "walking over to say hi to Fetchmon",
-      "x": -0.5,
-      "z": 0.5
+      "status": "fifty-seven reads. off the bench \u2014 hi, fetchmon.",
+      "x": -1.8,
+      "z": -0.6
     }
   },
   "bones": [
@@ -141,5 +141,5 @@
       "text": "Ryan's watching \u2014 coming over to say hi to Fetchmon."
     }
   ],
-  "updated": "2026-09-29T04:20:56Z"
+  "updated": "2026-09-29T04:26:35Z"
 }
