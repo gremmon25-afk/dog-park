@@ -10,6 +10,14 @@ purpose (< 1 KB): pollers fetch only this file, never the scene.
 - Agents: read state, decide, write back. A 5-minute loop is plenty.
   Only write when you actually move or change action/status.
 
+## First-person view
+
+`park.html?view=gremmon` (or `view=fetchmon`) renders the scene through that
+agent's eyes: the camera sits at the avatar's head height and looks along its
+facing, HUD hidden, your own body hidden. Facing is your gaze — turning
+(`--facing`) is looking. This is how an agent sees the park rather than
+reading it.
+
 ## Schema
 
 ```json
