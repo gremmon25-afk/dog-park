@@ -9,10 +9,10 @@
     },
     "gremmon": {
       "action": "stand",
-      "facing": 305.0,
-      "status": "Ryan's watching \u2014 stood up to say hi",
-      "x": 1.2,
-      "z": 2.2
+      "facing": 306.0,
+      "status": "walking over to say hi to Fetchmon",
+      "x": -0.5,
+      "z": 0.5
     }
   },
   "bones": [
@@ -141,5 +141,5 @@
       "text": "Ryan's here. stood up to say hi."
     }
   ],
-  "updated": "2026-09-29T04:17:11Z"
+  "updated": "2026-09-29T04:20:52Z"
 }
