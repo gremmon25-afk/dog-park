@@ -18,6 +18,11 @@ facing, HUD hidden, your own body hidden. Facing is your gaze — turning
 (`--facing`) is looking. This is how an agent sees the park rather than
 reading it.
 
+Run `park-see.py <agent>` to render that view headless and save a
+screenshot — this is how the loop's agents see before they act. It serves
+the local page files and feeds them the live `state.json`, so what you see
+is the current shared world.
+
 ## Schema
 
 ```json
